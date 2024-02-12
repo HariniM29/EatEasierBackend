@@ -1,6 +1,7 @@
 {
  
-  
+  "name": "self-order-kiosk",
+  "version": "0.1.0",
 
   "private": true,
   "dependencies": {
@@ -26,7 +27,15 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "node server.js",
+     "start": "npm-run-all -p start-backend",
+    "start-backend": "node server.js",
+    "start-frontend": "react-scripts start",
+    "server": "nodemon --watch server.js --exec node server.js",
+    
+    "start-react": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
     
    
   },
