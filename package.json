@@ -1,6 +1,5 @@
 {
-  "name": "self-order-kiosk",
-  "version": "0.1.0",
+ 
   
 
   "private": true,
@@ -27,8 +26,8 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "npm-run-all -p start-backend",
-    "start-backend": "node server.js",
+    "start": "node server.js",
+    
    
   },
   "eslintConfig": {
