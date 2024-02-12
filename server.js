@@ -75,8 +75,9 @@ app.post('/api/signup', async (req, res) => {
 });
 
 
-app.post('/api/login', async (req, res) => {
+app.post('https://eat-easier-backend.vercel.app/api/login', async (req, res) => {
   try {
+    console/log('j')
     // Find the user in the database based on the provided email
     const user = await User.findOne({ email: req.body.email });
     if (!user) {
@@ -85,6 +86,7 @@ app.post('/api/login', async (req, res) => {
 
     // Check if the provided password matches the user's password
     if (req.body.password != user.password) {
+          console/log('y')
       return res.status(401).json({ message: 'Authentication failed 4' });
     }
 
